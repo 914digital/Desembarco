@@ -174,13 +174,81 @@ a.ln {
 	background-image:url('/wp-content/themes/desembarco/img/winery_bg.jpg');
 	width:100%;
 	background-size:cover;
-	height:530px;
+	height:450px;
 }
 
 .winery-info {
+	color:#fff;
 	position: relative;
-    top: 85px;
+    top: 45px;
 }
+
+.winery-info h2 {
+	color: #fff;
+    font-size: 27px;
+    margin-top: -5px;
+}
+
+.winery-social {
+	
+}
+
+.winery-social a {
+	background-color: rgba(255, 255, 255, 0.66);
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 100px;
+    color: #514640;
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;	
+}
+
+.about-winery {
+	padding:40px; 0;
+}
+
+.about-winery h3 {
+	margin-top: 0px;
+}
+
+.about-vineyard {
+	padding:40px; 0;
+	background-color:#f2f2f2;
+}
+
+.about-vineyard h3 {
+	margin-top: 0px;
+}
+
+.more-wines {
+	padding:20px 0;
+}
+
+.more-wine-ind {
+	text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px 0px;
+}
+
+.footer-top {
+	padding:40px 0;
+	background-color:#241025;
+}
+
+.footer-bottom {
+	background-color:#3c1f3c;
+	padding:150px 0 20px;
+	color:#fff;
+}
+
+.footer-bottom p {
+	color:#fff;
+}
+
+
 
 
 
@@ -259,6 +327,10 @@ Bootstrap Styles -------------------------------------->
 .bn-btn:hover, .btn-bn:focus {
 	background-color: #F7A05E;
 	color:color: #37173B;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	border-top: 0;
 }
 
 

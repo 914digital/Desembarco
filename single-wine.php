@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
 	  <div class="col-md-4">
-		  <?php echo the_post_thumbnail(); ?>
+		   <img src="<?php echo CFS()->get('wine_image'); ?>" />
 	  </div><!-- /co-md-4 -->
 	   <div class="col-md-8">
 		   <div class="wnbox">
