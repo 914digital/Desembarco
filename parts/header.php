@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.png" />
    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="/css/bootstrap-image-gallery.min.css">
+   
 	<?php wp_head(); ?>
 </head>
 
@@ -27,11 +30,31 @@ register_nav_menu('upper-bar', __('Screen-top menu'));
 */
 ?>
 <div class="sixteen">
-<div class="top-nav">
+	<div class="top-nav-mobile">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6"><div class="social-top"><a href="#"><i class="fa fa-facebook"></i></a> <a class="tw" href="#"><i class="fa fa-twitter"></i></a> <a class="ln" href="#"><i class="fa fa-linkedin"></i></a></div> <a class="login" href="#">LOG IN</a> </div><!-- /col-md-6 -->
+			<div class="col-md-6">
+				<a class="navbar-brand" href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory') ?>/img/logo.png"></a>
+
+				
+			 </div><!-- /col-md-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+		
+</div><!-- /top-nav -->
+
 	
+	
+	
+<div class="top-nav">
+	<div class="container">
+		<div class="row">
 			<div class="col-md-8"> <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory') ?>/img/logo.png"></a>
 </div><!-- /col-md-6 -->
 			<div class="col-md-4"><div class="social-top"><a href="#"><i class="fa fa-facebook"></i></a> <a class="tw" href="#"><i class="fa fa-twitter"></i></a> <a class="ln" href="#"><i class="fa fa-linkedin"></i></a></div> <a class="login" href="#">LOG IN</a> </div><!-- /col-md-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
 		
 </div><!-- /top-nav -->
           <nav class="navbar navbar-default navbar-static-top" role="navigation">

@@ -14,6 +14,12 @@ img {
 
 a {
 	color: #cfc3d7;
+	transition:all .3s ease-in-out;
+}
+
+a:hover, a:focus {
+	color:#8A709C;
+	text-decoration:none;
 }
 
 
@@ -23,9 +29,13 @@ h1, h2, h3, h4 {
 	margin-bottom:10px;
 }
 
+.top-nav-mobile {
+	display:none;
+}
+
 .top-nav {
 	background-color: #3c1f3c;
-    padding: 20px 0px 90px;
+    padding: 20px 0px 45px;
 }
 
 .login {
@@ -166,6 +176,47 @@ a.ln {
 	
 }
 
+
+.wine-content-modal {
+    padding: 50px 20px;
+}
+
+.wine-content-modal h2 {
+	text-transform: uppercase;
+    font-size: 21px;
+    font-weight:300;
+	}
+
+.wine-content-modal h3 {
+	text-transform: uppercase;
+    font-size: 16px;
+    font-weight:bold;
+	}
+
+.wine-content-modal table {
+	
+}
+
+.wine-content-modal tr {
+	
+}
+
+.wine-content-modal td {
+	
+}
+
+.wine-content-modal td:first-child {
+	width:80px;
+	
+}
+
+.wine-content-modal td:last-child {
+	color:#777;
+	font-size:15px;
+	
+}
+
+
 .downloads {
 	padding:20px 0;
 }
@@ -175,6 +226,10 @@ a.ln {
 	width:100%;
 	background-size:cover;
 	height:450px;
+}
+
+.winery-header-mobile {
+	display:none;
 }
 
 .winery-info {
@@ -190,6 +245,7 @@ a.ln {
 }
 
 .winery-social {
+	margin-top: -10px;
 	
 }
 
@@ -231,7 +287,20 @@ a.ln {
 	text-align: center;
     background-color: #f2f2f2;
     padding: 20px 0px;
+    display:block;
 }
+
+.main-wine-ind {
+	text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px 0px;
+    display:block;
+}
+
+.main-wine-ind img {
+	width:50%;
+}
+
 
 .footer-top {
 	padding:40px 0;
@@ -331,6 +400,21 @@ Bootstrap Styles -------------------------------------->
 
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
 	border-top: 0;
+}
+
+.divide20 {
+	margin:20px 0;
+}
+
+.divide40 {
+	margin:40px 0;
+}
+
+.modal-content {
+	border-radius:0;
+	background-color: #f2f2f2;
+	border: 10px solid #fff;
+	
 }
 
 
@@ -531,7 +615,47 @@ Woocommerce re-styling
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
-
+	    .top-nav {display:none;}
+	    .top-nav-mobile {
+		    display:block;
+		    background-color: #3c1f3c;
+			padding: 20px 0px 45px; 
+	    }
+	    
+	    .winery-header {
+		    display:none;
+		    
+	    }
+	    
+	    .winery-header-mobile {
+		    display:block;
+		    background-image:url('/wp-content/themes/desembarco/img/winery_bg.jpg');
+			width:100%;
+			background-size:cover;
+			padding:20px 0;
+	    }
+	    
+	    .winery-info {
+		    top:0;
+	    }
+	    
+	    .winery-info h2 {
+		    color: #fff;
+		    font-size: 21px;
+		    margin-top: 20px;
+		}
+		
+		.about-vineyard h3 {
+			margin-top: 10px;
+		}
+		
+		.about-winery h3 {
+		    margin-top: 10px;
+		}
+		
+		.mdivide40 {
+			margin:40px 0;
+		}
     }
 
     /* Custom, iPhone Retina */ 

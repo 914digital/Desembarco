@@ -9,7 +9,10 @@
   </div>
   </div>
 </div>
+</div><!-- /sixteen -->
 
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/bootstrap-image-gallery.min.js"></script>
 
 <?php wp_footer(); ?>
 </body>
