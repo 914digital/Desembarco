@@ -33,7 +33,7 @@ register_nav_menu('upper-bar', __('Screen-top menu'));
 	<div class="top-nav-mobile">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6"><div class="social-top"><a href="#"><i class="fa fa-facebook"></i></a> <a class="tw" href="#"><i class="fa fa-twitter"></i></a> <a class="ln" href="#"><i class="fa fa-linkedin"></i></a></div> <a class="login" href="#">LOG IN</a> </div><!-- /col-md-6 -->
+			<div class="col-md-6"><!-- <div class="social-top"><a href="#"><i class="fa fa-facebook"></i></a> <a class="tw" href="#"><i class="fa fa-twitter"></i></a> <a class="ln" href="#"><i class="fa fa-linkedin"></i></a></div> <a class="login" href="#">LOG IN</a> --> </div><!-- /col-md-6 -->
 			<div class="col-md-6">
 				<a class="navbar-brand" href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory') ?>/img/logo.png"></a>
 
@@ -52,7 +52,7 @@ register_nav_menu('upper-bar', __('Screen-top menu'));
 		<div class="row">
 			<div class="col-md-8"> <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory') ?>/img/logo.png"></a>
 </div><!-- /col-md-6 -->
-			<div class="col-md-4"><div class="social-top"><a href="#"><i class="fa fa-facebook"></i></a> <a class="tw" href="#"><i class="fa fa-twitter"></i></a> <a class="ln" href="#"><i class="fa fa-linkedin"></i></a></div> <a class="login" href="#">LOG IN</a> </div><!-- /col-md-4 -->
+			<div class="col-md-4"><!-- <div class="social-top"><a href="#"><i class="fa fa-facebook"></i></a> <a class="tw" href="#"><i class="fa fa-twitter"></i></a> <a class="ln" href="#"><i class="fa fa-linkedin"></i></a></div> <a class="login" href="#">LOG IN</a> --> </div><!-- /col-md-4 -->
 		</div><!-- /row -->
 	</div><!-- /container -->
 		

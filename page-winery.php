@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Wines
+Template Name: Wineries
 */
 ?>
 <?php get_template_part('parts/header'); ?>
@@ -13,7 +13,7 @@ Template Name: Wines
 			<div class="col-md-10">
 			
 	<div class="wines-banner-text">
-		<h1>Explore Spain's Wines</h1>
+		<h1>Explore Spain's Wineries</h1>
 	</div><!-- /wines-banner-text -->
 	</div><!-- /col-md-10 -->
 	<div class="col-md-1"></div>
@@ -28,8 +28,8 @@ Template Name: Wines
 	  <?php
 										// WP_Query arguments
 									$args = array (
-										'post_type' => 'Wine',	
-										'posts_per_page' => '4',
+										'post_type' => 'Winery',	
+										'posts_per_page' => '24',
 										'order' => 'ASC',
 										 ); ?>
 									
@@ -43,10 +43,9 @@ Template Name: Wines
 										while ( $query->have_posts() ) {
 											$query->the_post();	?>
 											<div class="col-md-3">
-		  								<a href="<?php the_permalink(); ?>" class="main-wine-ind">
-			  								<img src="<?php echo CFS()->get('wine_image'); ?>" /><br />
-			  								<h3><?php the_title(); ?><br />
-			  								<?php echo CFS()->get('type_of_wine'); ?></h3>
+		  								<a href="<?php the_permalink(); ?>" class="main-winery">
+			  								<img src="<?php echo CFS()->get('winery_image'); ?>" /><br />
+			  								
 		  								</a><!-- /more-wine-ind -->
 		  								<div class="mdivide40"></div>
 	  								</div><!-- /col-md-3 -->
@@ -72,10 +71,6 @@ Template Name: Wines
 									
 									<?php wp_reset_query(); ?>	
   </div><!-- /row  -->
-  
-  
-  
-    
 	</div><!-- /container  -->
 </div><!-- /wines-main  -->
 	
