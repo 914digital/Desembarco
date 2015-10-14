@@ -29,7 +29,7 @@ Template Name: Wines
 										// WP_Query arguments
 									$args = array (
 										'post_type' => 'Wine',	
-										'posts_per_page' => '4',
+										'posts_per_page' => '-1',
 										'order' => 'ASC',
 										 ); ?>
 									
@@ -43,7 +43,7 @@ Template Name: Wines
 										while ( $query->have_posts() ) {
 											$query->the_post();	?>
 											<div class="col-md-3">
-		  								<a href="<?php the_permalink(); ?>" class="main-wine-ind">
+		  								<a href="#myModal-<?php the_ID(); ?>" class="main-wine-ind" data-toggle="modal" data-target="#myModal-<?php the_ID(); ?>">
 			  								<img src="<?php echo CFS()->get('wine_image'); ?>" /><br />
 			  								<h3><?php the_title(); ?><br />
 			  								<?php echo CFS()->get('type_of_wine'); ?></h3>
@@ -51,17 +51,55 @@ Template Name: Wines
 		  								<div class="mdivide40"></div>
 	  								</div><!-- /col-md-3 -->
 	  								
-	        
-        
-     	  								
+	  								  <script>
+	$("#next").click(function(){
+    $("#myModal-<?php the_ID(); ?>").modal('hide');
+    $("#myModal-<?php
+$adjacent_post = get_adjacent_post(false,'',false) ;
+echo $adjacent_post->ID;
+?>").modal('show');
+});
+</script>
 
 	  								
-	  								
-	  								   <?php $counter++;
+	        
+         
+	                        
+	                        <div class="modal fade" id="myModal-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	                          <div class="modal-dialog">
+	                            <div class="modal-content">
+	                              <div class="modal-header">
+	                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                                <h4 class="modal-title">Modal title</h4>
+	                              </div>
+	                              <div class="modal-body">
+	                                <p>One fine body <?php the_ID(); ?>  <?php
+$adjacent_post = get_adjacent_post(false,'',false) ;
+echo $adjacent_post->ID;
+?></p>
+	                              </div>
+	                              <div class="modal-footer">
+	                                <button id="next" class="btn">Next Modal</button>
+	                              
+	                              </div>
+	                            </div><!-- /.modal-content -->
+	                          </div><!-- /.modal-dialog -->
+	                        </div><!-- /.modal -->
+	                        
+	                        
+	                      
+	                        
+	                        
+	                      	                        
+	                       
+	                        
+	                       	                        
+		  								   <?php $counter++;
 	                    if ($counter % 4 == 0) {
 	                    echo '</div><div class="divide40"></div><div class="row">';
 	                        } ?>
-
+	                        
+	                      
 	  								
 	  								
 	  						<?php	} ?>
@@ -78,12 +116,9 @@ Template Name: Wines
     
 	</div><!-- /container  -->
 </div><!-- /wines-main  -->
-	
-	
-	
-	
 
+   
 
-
+		
 
 <?php get_template_part('parts/footer'); ?>

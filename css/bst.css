@@ -79,6 +79,15 @@ a.ln {
 	padding: 3px 5px;
 }
 
+.top-banner {
+	width:100%;
+	background-image:url('/wp-content/themes/desembarco/img/top-banner.jpg');
+	height:446px;
+	background-repeat:no-repeat;
+	margin-top: 20px;
+	background-size: cover;
+}
+
 .banner {
 	background-image:url('/wp-content/themes/desembarco/img/main-banner.jpg');
 	background-size:cover;
@@ -101,6 +110,32 @@ a.ln {
     color:#FFFFFF;
 }
 
+.fp-feature {
+	background-color:#fafafa;
+	padding:20px 0;
+	margin:20px 0;
+	text-align:center;
+}
+
+.fp-feature h3 {
+	color: #ef4324;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fp-feature h4 {
+	color: #252525;
+        font-size: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+	
+}
+
+.fp-feature p {
+	font-size:13px;
+}
+
 .stripe {
 	padding:20px 0;
 	text-align:center;
@@ -113,15 +148,14 @@ a.ln {
 }
 
 .white h3 {
-	font-weight:300;
 	color:#431f59;
     line-height: 33px;
+        margin-top: 0px;
 }
 
 .grey {
 	background-color:#f2f2f2;
 	color:#555;
-	padding-bottom:60px;
 }
 
 .wine-content {
@@ -141,6 +175,7 @@ a.ln {
     font-weight:bold;
 	}
 
+
 .wnbox {
 	background-color: #fff;
     padding:10px;
@@ -151,6 +186,27 @@ a.ln {
 	background-color: #fff;
     padding:0 5px;
     margin:10px 0;
+}
+
+.wine_rating {
+	margin: 20px 0px;
+}
+
+.rating {
+display: inline-block;
+    background-color: #3C1F3C;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 13px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    }
+
+.publication {
+	margin-left: 10px;
+    font-size: 17px;
+    color: #777;
 }
 
 .wine-content table {

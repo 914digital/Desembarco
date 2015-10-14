@@ -64,30 +64,31 @@
 				
 		   </div><!-- /wnbox -->
 		   
-		    <div class="wnbox-sm">
-			  <table>
-				  <tr>
-					  <td><h3>Production:</h3></td>
-					  <td><?php echo CFS()->get('production'); ?></td>
-				  </tr>
-			  </table>
-		   </div><!-- /wnbox -->
-
+		  
 				    </div><!-- /co-md-8 -->
 			     <div class="col-md-4">
-				      <div class="wnbox">
-				     <h3>Importer</h3>
-				     <p><strong><?php echo CFS()->get('importer'); ?></strong></p>
-				     <p><?php echo CFS()->get('importer_address'); ?></p>
-				      </div><!-- /wnbox -->
+				     
 				      
 				       <div class="wnbox">
 				     <h3>Wine Ratings</h3>
-				     <p><?php echo CFS()->get('wine_rating'); ?></p>
+				        <?php
+				                         $fields = CFS()->get('wine_rating');
+				                         foreach ($fields as $field) { ?>
+				                         <?php echo '<div class="wine_rating">' ?>
+				                         <?php echo '<span class="rating">'.$field['rating'].'</span>'; ?>
+				                            <?php echo '<span class="publication">'.$field['publication'].'</span>'; ?>
+				                         <?php echo '</div>' ?>
+				                      <?php   }  ?>
+				    
 				      </div><!-- /wnbox -->
 				     
 				      </div><!-- /co-md-4 -->
 		   </div><!-- /row -->
+		   
+		     <div class="wnbox">
+				     <h2>Notes For Consumers</h2>
+				     <p><?php echo CFS()->get('notes_for_consumers'); ?></p>
+				      </div><!-- /wnbox -->
 		     <div class="wnbox">
 				     <h2>Wine Description</h2>
 				     <p><?php echo CFS()->get('wine_description'); ?></p>
@@ -98,10 +99,7 @@
 				     <p><?php echo CFS()->get('tasting_notes'); ?></p>
 				      </div><!-- /wnbox -->
 				      
-				          <div class="wnbox">
-				     <h2>Notes For Consumers</h2>
-				     <p><?php echo CFS()->get('notes_for_consumers'); ?></p>
-				      </div><!-- /wnbox -->
+				        
 				      
 				   
 				     		   

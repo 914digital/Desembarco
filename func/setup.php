@@ -198,4 +198,9 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
     add_filter('login_headerurl', 'put_my_url');
 
 
-
+function get_next_post_id() {
+global $wp_query;
+if ($wp_query->current_post == $wp_query->post_count) return 0;
+$next_post = $wp_query->posts[$wp_query->current_post + 1];
+return $next_post->ID;
+}
